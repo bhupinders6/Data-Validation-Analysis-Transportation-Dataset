@@ -1,0 +1,23 @@
+Transportation Network Optimization Portfolio Project
+
+Simulated data for portfolio demonstration purposes
+
+CREATE TABLE shipments (
+    shipment_id INT PRIMARY KEY,
+    destination VARCHAR(50),
+    shipments INT,
+    current_cost DECIMAL(10,2)
+);
+
+CREATE TABLE carrier_rates (
+    rate_id INT PRIMARY KEY,
+    destination VARCHAR(50),
+    carrier VARCHAR(50),
+    carrier_cost DECIMAL(10,2)
+);
+
+CREATE TABLE carrier_service (
+    carrier VARCHAR(50) PRIMARY KEY,
+    service_level DECIMAL(5,4),
+    minimum_service_level DECIMAL(5,4)
+);
